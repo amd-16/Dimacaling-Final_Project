@@ -27,9 +27,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { href: 'https://www.facebook.com/alihakim.dimacaling15', img: '/images/facebook-logo.png', alt: 'Facebook' },
-    { href: 'https://github.com/amd-16', img: '/images/github-logo.png', alt: 'GitHub' },
-    { href: 'https://mail.google.com/mail/', img: '/images/gmail-logo.png', alt: 'Gmail' },
+    { href: 'https://www.facebook.com/alihakim.dimacaling15', img: process.env.PUBLIC_URL + '/images/facebook-logo.png', alt: 'Facebook' },
+    { href: 'https://github.com/amd-16', img: process.env.PUBLIC_URL + '/images/github-logo.png', alt: 'GitHub' },
+    { href: 'https://mail.google.com/mail/', img: process.env.PUBLIC_URL + '/images/gmail-logo.png', alt: 'Gmail' },
   ];
 
   return (

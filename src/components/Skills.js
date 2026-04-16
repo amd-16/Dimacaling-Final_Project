@@ -45,7 +45,7 @@ const Skills = () => (
     style={{
       fontFamily: "'Orbitron', sans-serif",
       background:
-        'linear-gradient(180deg, rgba(26,26,26,0.85), rgba(11,31,63,0.90)), url(/images/background-image.jpg) no-repeat center center / cover',
+        `linear-gradient(180deg, rgba(26,26,26,0.85), rgba(11,31,63,0.90)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
       backgroundAttachment: 'fixed',
     }}
   >
@@ -71,7 +71,7 @@ const Skills = () => (
           <p className="text-sm mt-2 text-gray-700">
             {skill.description}
           </p>
-          
+
           {/* Clickable icon links */}
           <div className="flex gap-3 mt-4 flex-wrap items-center">
             {skill.links.map((link, j) => (

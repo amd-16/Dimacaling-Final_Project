@@ -34,7 +34,7 @@ const AboutMe = () => {
       style={{
         fontFamily: "'Orbitron', sans-serif",
         background:
-          'linear-gradient(180deg, rgba(26,26,26,0.82), rgba(11,31,63,0.92)), url(/images/background-image.jpg) no-repeat center center / cover',
+          `linear-gradient(180deg, rgba(26,26,26,0.82), rgba(11,31,63,0.92)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
         backgroundAttachment: 'fixed',
       }}
     >

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 
 const allProjects = [
   [
-    { href: 'https://dimacalingtechnicaldocumentation.vercel.app/', img: '/images/technicaldocument.png', title: 'Technical Document Web Page', desc: 'A website in the form of a technical document.' },
-    { href: 'https://dimacalingsurvey.vercel.app/', img: '/images/survey.png', title: 'Customer Satisfaction Survey', desc: 'A form that intakes customer feedback.' },
-    { href: 'https://dimacalingtributepage.vercel.app/', img: '/images/tribute.png', title: 'Tribute Page', desc: 'A page that shows gratitude to my brother.' },
+    { href: 'https://dimacalingtechnicaldocumentation.vercel.app/', img: process.env.PUBLIC_URL + '/images/technicaldocument.png', title: 'Technical Document Web Page', desc: 'A website in the form of a technical document.' },
+    { href: 'https://dimacalingsurvey.vercel.app/', img: process.env.PUBLIC_URL + '/images/survey.png', title: 'Customer Satisfaction Survey', desc: 'A form that intakes customer feedback.' },
+    { href: 'https://dimacalingtributepage.vercel.app/', img: process.env.PUBLIC_URL + '/images/tribute.png', title: 'Tribute Page', desc: 'A page that shows gratitude to my brother.' },
   ],
   [
-    { href: 'https://dimacalingportfolio.vercel.app/', img: '/images/portfolio.png', title: 'Personal Portfolio', desc: 'A page showcasing my past works.' },
-    { href: 'https://onlineportfoliocc1.vercel.app/', img: '/images/groupwebsite.png', title: 'Group Portfolio', desc: 'Simple web page we made in first-year of university.' },
+    { href: 'https://dimacalingportfolio.vercel.app/', img: process.env.PUBLIC_URL + '/images/portfolio.png', title: 'Personal Portfolio', desc: 'A page showcasing my past works.' },
+    { href: 'https://onlineportfoliocc1.vercel.app/', img: process.env.PUBLIC_URL + '/images/groupwebsite.png', title: 'Group Portfolio', desc: 'Simple web page we made in first-year of university.' },
   ],
 ];
 
@@ -39,7 +39,7 @@ const Projects = () => {
       style={{
         fontFamily: "'Orbitron', sans-serif",
         background:
-          'linear-gradient(180deg, rgba(11,31,63,0.88), rgba(15,15,15,0.93)), url(/images/background-image.jpg) no-repeat center center / cover',
+          `linear-gradient(180deg, rgba(11,31,63,0.88), rgba(15,15,15,0.93)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
         backgroundAttachment: 'fixed',
       }}
     >

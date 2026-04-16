@@ -14,7 +14,7 @@ const entries = [
       },
       {
         href: 'https://github.com/amd-16',
-        img: '/images/github-logo.png',
+        img: process.env.PUBLIC_URL + '/images/github-logo.png',
         label: 'GitHub',
       },
     ],
@@ -28,7 +28,7 @@ const Experience = () => (
     style={{
       fontFamily: "'Orbitron', sans-serif",
       background:
-        'linear-gradient(180deg, rgba(15,15,15,0.88), rgba(26,26,26,0.92)), url(/images/background-image.jpg) no-repeat center center / cover',
+        `linear-gradient(180deg, rgba(15,15,15,0.88), rgba(26,26,26,0.92)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
       backgroundAttachment: 'fixed',
     }}
   >

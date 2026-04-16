@@ -16,7 +16,7 @@ function App() {
       {/* GLOBAL BACKGROUND IMAGE */}
       <div className="fixed inset-0 -z-10">
         <img
-          src="/images/background-image.jpg"
+          src={process.env.PUBLIC_URL + "/images/background-image.jpg"}
           alt="background"
           className="w-full h-full object-cover"
         />

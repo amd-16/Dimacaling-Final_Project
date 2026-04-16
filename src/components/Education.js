@@ -36,7 +36,7 @@ const Education = () => (
     style={{
       fontFamily: "'Orbitron', sans-serif",
       background:
-        'linear-gradient(180deg, rgba(11,31,63,0.88), rgba(15,15,15,0.93)), url(/images/background-image.jpg) no-repeat center center / cover',
+        `linear-gradient(180deg, rgba(11,31,63,0.88), rgba(15,15,15,0.93)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
       backgroundAttachment: 'fixed',
     }}
   >

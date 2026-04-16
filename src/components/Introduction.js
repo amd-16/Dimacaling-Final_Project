@@ -8,7 +8,7 @@ const Introduction = () => {
       style={{
         fontFamily: "'Orbitron', sans-serif",
         background:
-          'linear-gradient(180deg, rgba(26,26,26,0.65), rgba(17,17,17,0.95)), url(/images/background-image.jpg) no-repeat center center / cover',
+          `linear-gradient(180deg, rgba(26,26,26,0.65), rgba(17,17,17,0.95)), url(${process.env.PUBLIC_URL}/images/background-image.jpg) no-repeat center center / cover`,
       }}
     >
 
@@ -75,7 +75,7 @@ const Introduction = () => {
             />
 
             <img
-              src="/images/portrait-image.png"
+              src={process.env.PUBLIC_URL + "/images/portrait-image.png"}
               alt="Portrait"
               className="rounded-full object-cover"
               style={{
