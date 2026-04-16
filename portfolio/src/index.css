@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --ps-blue:    #003791;
+  --ps-blue-lt: #0070cc;
+  --ps-dark:    #00052b;
+  --ps-navy:    #0a0f2e;
+  --ps-panel:   #0d1540;
+  --ps-card:    #111a4a;
+  --ps-border:  rgba(0, 112, 204, 0.35);
+
+  --ps-cross:    #7fc5e8;
+  --ps-circle:   #e87b7b;
+  --ps-square:   #e87bce;
+  --ps-triangle: #7be8b4;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: var(--ps-dark);
+  color: white;
+  margin: 0;
+}
+
+/* PS button symbol accents */
+.ps-symbol::before {
+  content: '✕  ○  □  △';
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.18);
+}
+
+.intro-name { font-size: 60px; }
+
+@media (max-width: 768px) {
+  .intro-name { font-size: 32px; }
+}
+
+/* Glowing blue underline on section titles */
+.ps-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.ps-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--ps-cross), var(--ps-blue-lt));
+  box-shadow: 0 0 10px var(--ps-blue-lt);
+}
